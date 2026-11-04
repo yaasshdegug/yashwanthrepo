@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G. Yaswanth Kumar | AWS Cloud & DevOps</title>
+<meta name="description" content="Portfolio of G. Yaswanth Kumar - AWS Cloud, Terraform, Linux, Python and SQL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+<canvas id="bgc" aria-hidden="true"></canvas>
+
+<nav>
+ <div class="wrap">
+  <a href="#home" class="logo">Yaswanth<span>.cloud</span></a>
+  <div class="links" id="links">
+   <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#architecture">Architecture</a><a href="#education">Education</a><a href="#contact">Contact</a>
+   <button class="tb" id="theme" aria-label="Toggle light and dark theme">☾</button>
+  </div>
+  <button class="burger" id="burger" aria-label="Open menu">☰</button>
+ </div>
+</nav>
+
+<header class="hero" id="home">
+ <div class="wrap">
+  <div>
+   <p class="hi">Hi, I'm</p>
+   <h1><span class="grad">G. Yaswanth Kumar</span></h1>
+   <div class="role" id="role" aria-label="AWS Cloud and DevOps Enthusiast"></div>
+   <p class="lead">Electronics and Communication Engineering graduate with hands-on experience in AWS Cloud, Terraform, Linux, Python and SQL. Interested in building secure, scalable and reliable cloud infrastructure.</p>
+   <div class="btns">
+    <a class="btn p" href="#projects">View Projects</a>
+    <a class="btn" href="Vcube-CV.pdf" download>Download Resume</a>
+    <a class="btn" href="#contact">Contact Me</a>
+   </div>
+  </div>
+  <div class="photo">
+   <div class="in">
+    <!-- Put your photo in the images folder and name it 23AT5A0418.jpeg -->
+    <img src="23AT5A0418.jpeg" alt="Portrait of G. Yaswanth Kumar" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span class="fb" aria-hidden="true">GY</span>
+   </div>
+   <span class="chip glass c1">☁ AWS</span>
+   <span class="chip glass c2">🏗 Terraform</span>
+   <span class="chip glass c3">🐧 Linux</span>
+  </div>
+ </div>
+</header>
+
+<section id="about"><div class="wrap rv">
+ <h2>About me</h2>
+ <div class="about">
+  <div>
+   <p>I am an Electronics and Communication Engineering graduate with a strong interest in Cloud Computing and DevOps. I have developed hands-on experience with AWS services, Terraform, Linux, Python and SQL through practical learning and projects.</p>
+   <p>I enjoy designing cloud infrastructure, understanding networking concepts and automating infrastructure using Infrastructure as Code.</p>
+  </div>
+  <div class="stats glass">
+   <div><span>Education</span><b>B.Tech ECE</b></div>
+   <div><span>Years</span><b>2023 – 2026</b></div>
+   <div><span>CGPA</span><b data-count="8.7">0</b></div>
+   <div><span>Focus</span><b>AWS Cloud</b></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap rv">
+ <h2>Skills</h2>
+ <div class="sx glass">
+  <div class="sl" role="tablist" aria-label="Skill categories" id="sl"></div>
+  <div class="sp" id="sp" role="tabpanel" aria-live="polite"></div>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap rv">
+ <h2>Projects</h2>
+ <div class="tabs" role="tablist">
+  <button class="tab on" data-p="p1" role="tab">Multi-Tier AWS</button>
+  <button class="tab" data-p="p2" role="tab">I-V Curve Tracer</button>
+ </div>
+ <article class="proj glass on" id="p1">
+  <h3>Multi-Tier Architecture on AWS Cloud</h3>
+  <p>Designed and implemented a multi-tier architecture on AWS consisting of a Web Server, Application Server and Data Server. The web server handles incoming user requests, while the application server processes application logic and communicates with the data server internally. The architecture uses Amazon VPC, subnets, route tables, security groups and a NAT Gateway to provide controlled network communication, security and internet access where required.</p>
+  <ul>
+   <li>Created a VPC with public and private subnets.</li>
+   <li>Deployed the Web Server in the public subnet.</li>
+   <li>Deployed the Application Server in a private subnet.</li>
+   <li>Hosted the Data Server / database in the private layer.</li>
+   <li>Enabled internal communication between application and database tiers.</li>
+   <li>Used Security Groups to control traffic between tiers.</li>
+   <li>Used an Internet Gateway for required public connectivity.</li>
+   <li>Used a NAT Gateway for outbound internet access from private resources.</li>
+   <li>Used Terraform to provision and manage the AWS infrastructure.</li>
+  </ul>
+  <div class="tags"><span class="tag">AWS</span><span class="tag">VPC</span><span class="tag">EC2</span><span class="tag">RDS</span><span class="tag">Security Groups</span><span class="tag">Route Tables</span><span class="tag">NAT Gateway</span><span class="tag">Internet Gateway</span><span class="tag">Terraform</span></div>
+  <p style="margin-top:18px"><a class="btn p" href="#architecture">See the architecture</a> <a class="btn" href="https://github.com/yaasshdegug" target="_blank" rel="noopener">View on GitHub</a></p>
+ </article>
+ <article class="proj glass" id="p2">
+  <h3>Wireless Self-Powered I-V Curve Tracer</h3>
+  <p>Designed and developed a portable wireless I-V curve tracer for real-time characterization of photovoltaic panels under varying environmental conditions. The system uses a non-intrusive disconnect circuit, battery-powered operation and Bluetooth connectivity to enable portable PV testing without interrupting the existing PV installation.</p>
+  <div class="tags"><span class="tag">MATLAB</span><span class="tag">Electronics</span><span class="tag">Bluetooth</span><span class="tag">Solar PV</span><span class="tag">I-V Characterization</span></div>
+ </article>
+</div></section>
+
+<section id="architecture"><div class="wrap rv">
+ <h2>AWS architecture</h2>
+ <div class="arch glass">
+  <p style="color:var(--mut);margin-bottom:22px">Select a tier to see what it does.</p>
+  <div class="flow">
+   <div class="node net"><b>🌐 Internet</b></div><div class="arr"></div>
+   <div class="node net"><b>Internet Gateway</b></div><div class="arr"></div>
+   <button class="node on" data-i="0"><b>Web Server</b><small>Public subnet · EC2</small></button><div class="arr"></div>
+   <button class="node" data-i="1"><b>Application Server</b><small>Private subnet · EC2</small></button><div class="arr"></div>
+   <button class="node" data-i="2"><b>Data Server</b><small>Database subnet · RDS</small></button>
+  </div>
+  <div class="info" id="info" aria-live="polite"></div>
+ </div>
+</div></section>
+
+<section id="education"><div class="wrap rv">
+ <h2>Education</h2>
+ <div class="tl">
+  <div class="ti glass"><h3>B.Tech – Electronics & Communication Engineering</h3><p>G. Pullaiah College of Engineering and Technology</p><p class="gr">2023 – 2026 | 8.7 CGPA</p></div>
+  <div class="ti glass"><h3>Diploma – Electronics & Communication Engineering</h3><p>Brindavan Institute of Technology and Sciences</p><p class="gr">2020 – 2023 | 88.8% / 8.88 CGPA</p></div>
+  <div class="ti glass"><h3>SSLC</h3><p>Sea Rock English High School</p><p class="gr">2019 – 2020 | 10 CGPA</p></div>
+ </div>
+</div></section>
+
+<section id="certs"><div class="wrap rv">
+ <h2>Certifications</h2>
+ <div class="cg">
+  <div class="cd glass"><span class="em">🎓</span><h3>Cambridge Linguaskill</h3><p>English language proficiency assessment.</p></div>
+  <div class="cd glass"><span class="em">🐍</span><h3>Python – PrepInsta</h3><p>Python programming certification.</p></div>
+ </div>
+</div></section>
+
+<section id="achievements"><div class="wrap rv">
+ <h2>Achievements</h2>
+ <div class="cg">
+  <div class="cd glass"><span class="em">🏆</span><h3>Project Leadership</h3><p>Led two successful projects and demonstrated leadership and problem-solving.</p></div>
+  <div class="cd glass"><span class="em">🎤</span><h3>Public Speaking</h3><p>Won awards in public speaking and English-based competitions.</p></div>
+  <div class="cd glass"><span class="em">💡</span><h3>Technical Communication</h3><p>Presented technical concepts and complex ideas effectively.</p></div>
+  <div class="cd glass"><span class="em">🤖</span><h3>AI & Prompt Engineering</h3><p>Hands-on experience with AI tools and prompt engineering.</p></div>
+  <div class="cd glass"><span class="em">💻</span><h3>Hackathons</h3><p>Participated in hackathons to improve technical and analytical abilities.</p></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap rv">
+ <h2>Let's connect</h2>
+ <div class="ct">
+  <a class="glass" href="mailto:yaswanth1494@gmail.com"><span class="ic">📧</span><div><small>Email</small><span>yaswanth1494@gmail.com</span></div></a>
+  <a class="glass" href="tel:720751241"><span class="ic">📱</span><div><small>Phone</small><span>720751241</span></div></a>
+  <a class="glass" href="https://www.linkedin.com/in/g-yaswanth-2157a9296/" target="_blank" rel="noopener"><span class="ic">🔗</span><div><small>LinkedIn</small><span>g-yaswanth-2157a9296</span></div></a>
+  <a class="glass" href="https://github.com/yaasshdegug" target="_blank" rel="noopener"><span class="ic">💻</span><div><small>GitHub</small><span>yaasshdegug</span></div></a>
+  <a class="glass" href="Vcube-CV.pdf" download><span class="ic">📄</span><div><small>Resume</small><span>Download CV (PDF)</span></div></a>
+ </div>
+</div></section>
+
+<footer>© <span id="yr"></span> G. Yaswanth Kumar. Built with HTML, CSS and JavaScript.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
